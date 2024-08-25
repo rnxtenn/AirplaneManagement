@@ -1,8 +1,8 @@
-package AirplaneManagement;
+package airplaneManagement;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 public class Login extends JFrame implements ActionListener{
 
     JButton btnreste,btnsubmit, btndlt;
@@ -49,7 +49,8 @@ public class Login extends JFrame implements ActionListener{
         setLocation(520,240);
     }
     
-    public void Actionperformed(ActionEvent ae){
+    @Override
+    public void actionPerformed(ActionEvent ae){
         
         if (ae.getSource() == btnreste) 
         {
@@ -62,6 +63,6 @@ public class Login extends JFrame implements ActionListener{
         }
     }
     public static void main(String[] args) {
-        new Login();
+         new Login();
     }
 }
